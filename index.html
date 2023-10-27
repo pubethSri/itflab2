@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY_MEME</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setName() {
+            const nameField = document.getElementById('username');
+            const name = nameField.value;
+            const title = document.getElementById('profile-link');
+            title.innerText = name + ' Profile';
+            document.getElementById('username').value = ''
+        }
+
+        function setImage() {
+            const pfpImage = document.getElementById('profile-pic').value;
+            document.getElementById('pfporigin').style.backgroundImage = 'url(' + pfpImage + ')';
+            document.getElementById('profile-pic').value = ''
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div id="pfporigin" class="parent">
+            <div class="child">
+                <p id="noti">3</p>
+            </div>
+        </div>
+        <a id="profile-link" href="https://www.instagram.com/amaipan_cruz/" target="_blank">Amaipan's DIY meme</a>
+        <div class="flex">
+            <p>Set Profile Name</p>
+            <input id='username' type="text">
+            <button onclick="setName()">Click me!</button>
+        </div>
+        <div class="flex">
+            <p>Set Profile Pic</p>
+            <input id='profile-pic' type="text">
+            <button onclick="setImage()">Click me!</button>
+        </div>
+        <div class="gallery">
+            <div class="images" style="grid-column: span 2 / span 2; background-image: url(./ten_pics/ALL/ganged.png);"></div>
+            <div class="images" style="background-image: url(./ten_pics/ALL/00121.png);"></div>
+            <div class="images" style="grid-column: span 3; grid-row: span 2; background-image: url(./ten_pics/ALL/kmitl_selfie.png);"></div>
+            <div class="images" style="background-image: url(./ten_pics/ALL/ryowithmom.png);"></div>
+            <div class="images" style="grid-column: span 2 / span 2; background-image: url(./ten_pics/ALL/last_burenyu.png);"></div>
+            <div class="images" style="grid-column: span 2; grid-row: span 2; background-image: url(./ten_pics/ALL/bocchi_mib_crob.png);"></div>
+            <div class="images" style="grid-row: span 2; background-image: url(./ten_pics/ALL/nijikahiking.png);"></div>
+            <div class="images" style="background-image: url(./ten_pics/ALL/iroha_crop.png);"></div>
+            <div class="images" style="grid-column: span 2 / span 2; background-image: url(./ten_pics/ALL/ryocardjesus\'.png);"></div>
+            <div class="images" style="grid-column: span 3; grid-row: span 2; background-image: url(./ten_pics/ALL/art_gal_think_series.png);"></div>
+        </div>
+    </main>
+</body>
+</html>
