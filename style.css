@@ -21,7 +21,7 @@ main {
     width: 191px;
     height: 191px;
     position: relative;
-    background-image: url(./ten_pics/ALL/normal.png);
+    background-image: url(./images/normal.png);
     background-size: cover;
     background-position: center;
     border-radius: 9999px;
